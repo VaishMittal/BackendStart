@@ -11,5 +11,8 @@ const server = http.createServer(async(req,res)=>{
 PORT=8000;
 
 server.listen(PORT,()=>{
+    const a= server.address();
     console.log(`server is running on port ${PORT}`);
 })
+
+// random range of port 49000 to 65000
